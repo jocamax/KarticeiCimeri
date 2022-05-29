@@ -436,6 +436,26 @@ input[type="file"] {
 }
 
 
+/* Oglas Kartice */
+.oglasKarticeContainerLi{
+    margin-top: 50px;
+    color: black;
+    width: 330px;
+    height: 170px;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+    -webkit-box-shadow: 5px 4px 12px 1px rgba(0,0,0,0.25); 
+    box-shadow: 5px 4px 12px 1px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    list-style: none;
+}
+
+.oglasiKarticeGrid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center
+}
+
 
 
 /* Text Classes */

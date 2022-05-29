@@ -20,7 +20,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/oglasic' element={<OglasiCimer/>}></Route>
-      <Route path='/oglasik' element={<OglasiKartice/>}></Route>
       <Route path='/profile' element={<ProtectedRoute/>}>
       <Route path='/profile' element={<Profile/>}></Route>
       </Route>
@@ -28,6 +27,7 @@ function App() {
       <Route path='/sign-up' element={<SignUp/>}></Route>
       <Route path='/forgot-password' element={<ForgotPassword/>}></Route>
       <Route path='/napravi-oglas' element={<CreateOglas/>}></Route>
+      <Route path='/oglasi-kartice' element={<OglasiKartice/>}></Route>
     </Routes>
 
      </BrowserRouter>

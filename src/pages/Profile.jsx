@@ -85,6 +85,9 @@ const onChange = (e) =>{
       <Link to='/napravi-oglas'>
       <button className='btn'>Nadji cimera</button>
       </Link>
+      <Link to='napravi-oglas-kartica'>
+        <button className='btn'>Oglasi Karticu</button>
+      </Link>
       <button className='btn logout' type='button' onClick={onLogout}>Log Out</button>
     </div>
 

@@ -11,6 +11,7 @@ import {
  import {db} from '../firebase.config'
  import {toast} from 'react-toastify'
  import OglasC from '../components/OglasC'
+import Spinner from '../components/Spinner'
 
 
 function OglasiCimer() {
@@ -51,7 +52,7 @@ function OglasiCimer() {
   },[])
 
   return (
-    <div>{loading?( <h2>Loading...</h2> ): oglasi && oglasi.length > 0 ? (
+    <div>{loading?( <Spinner/> ): oglasi && oglasi.length > 0 ? (
       <>
       <main>
         <ul className='oglasiContentGrid'>

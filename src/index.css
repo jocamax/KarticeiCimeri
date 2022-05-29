@@ -426,6 +426,14 @@ input[type="file"] {
     text-align: center;
 }
 
+/* SPinner */
+
+.spinner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
 
 
 

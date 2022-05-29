@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
+import Spinner from './Spinner'
 
 // https://stackoverflow.com/questions/65505665/protected-route-with-firebase
 // custom hook je iz gore pomenutog linka
@@ -25,7 +26,7 @@ function ProtectedRoute() {
 
   const {loggedIn, checkingStatus} = useAuthStatus()
   if(checkingStatus){
-    return <h3>Loading...</h3>
+    return <Spinner/>
   }
 
   return loggedIn ? <Outlet/> : <Navigate to='/sign-in'/> 

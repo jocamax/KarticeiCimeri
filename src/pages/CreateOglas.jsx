@@ -11,6 +11,7 @@ import {
 import {db} from '../firebase.config'
 import { toast } from 'react-toastify';
 import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
+import Spinner from '../components/Spinner';
 
 //spiner
 
@@ -165,7 +166,7 @@ function CreateOglas() {
     }
 
     if(loading){
-       return <h3>Loading...</h3>
+       return <Spinner/>
     }
   return (
     <div className='napraviOglasContainer'>

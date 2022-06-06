@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import CreateOglas from './pages/CreateOglas';
 import OglasiKartice from './pages/OglasiKartice';
 import Footer from './components/Footer';
+import CreateKartica from './pages/CreateKartica';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path='/forgot-password' element={<ForgotPassword/>}></Route>
       <Route path='/napravi-oglas' element={<CreateOglas/>}></Route>
       <Route path='/oglasi-kartice' element={<OglasiKartice/>}></Route>
+      <Route path='/napravi-oglas-kartica' element={<CreateKartica/>}></Route>
     </Routes>
     <Footer/>
      </BrowserRouter>

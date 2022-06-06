@@ -11,6 +11,7 @@ import ProtectedRoute from './components/ProtectedRoutes';
 import 'react-toastify/dist/ReactToastify.css'
 import CreateOglas from './pages/CreateOglas';
 import OglasiKartice from './pages/OglasiKartice';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
       <Route path='/napravi-oglas' element={<CreateOglas/>}></Route>
       <Route path='/oglasi-kartice' element={<OglasiKartice/>}></Route>
     </Routes>
-
+    <Footer/>
      </BrowserRouter>
      <ToastContainer
      position='bottom-center'

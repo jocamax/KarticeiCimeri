@@ -55,6 +55,7 @@ function OglasiCimer() {
     <div>{loading?( <Spinner/> ): oglasi && oglasi.length > 0 ? (
       <>
       <main>
+        <h1 className='oglasiH1'>Oglasi</h1>
         <ul className='oglasiContentGrid'>
           {oglasi.map((oglas) =>{
            return <OglasC 

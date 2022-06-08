@@ -230,6 +230,8 @@ a{
 
 
 /* Sign In / Sign Up*/
+
+
 .signInHeading{
     font-size: 40px;
     margin: 5px;
@@ -266,7 +268,6 @@ a{
     padding: 10px;
     margin: 10px 0;
 }
-
 
 
 .passwordChangeBtn{
@@ -325,6 +326,32 @@ a{
     border-radius: 3px;
     width: 400px;
 }
+
+
+@media(max-width:750px){
+  
+    .signInHeading{
+        font-size: 30px;
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+      
+    .signInForm{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .signInBtn{
+        align-self: center;
+        padding: 7px 35px;
+
+    
+    }
+    .hr{
+        width: 200px;
+    }
+    }
+
 
 /* Napravi Oglas */
 
@@ -596,6 +623,8 @@ input[type="file"] {
         justify-content: center;
         gap: 1px;
     }
+
+ 
 }
 
 @media(max-width: 564px){

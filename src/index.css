@@ -69,8 +69,8 @@ a{
     }
 
     .navItem{
-        font-size: 16px;
-        padding: 15px 5px;
+        font-size: 15px;
+        padding: 14px 5px;
     }
 }
 
@@ -685,6 +685,10 @@ input[type="file"] {
         width: 270px;
         max-height: 250px;
         object-fit: cover;
+    }
+
+    .napraviOglasContainer{
+        margin: 10px;
     }
     
 }

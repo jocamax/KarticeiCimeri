@@ -148,6 +148,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 5;
 
 }
 .oglasImgContainer{
@@ -202,6 +203,10 @@ a{
 .oglasiH1{
     text-align: center;
     opacity: 80%;
+}
+
+.removeIconC {
+
 }
 
 /* Oglasi Grid */

@@ -4,7 +4,7 @@ import {getAuth, onAuthStateChanged} from 'firebase/auth'
 import Spinner from './Spinner'
 
 // https://stackoverflow.com/questions/65505665/protected-route-with-firebase
-// custom hook je iz gore pomenutog linka
+// custom hook is from above mentioned link
 // protected routes https://www.youtube.com/watch?v=0x8Dap2EIVE
 const useAuthStatus = () =>{
   const [loggedIn, setLoggedIn] = useState(false)

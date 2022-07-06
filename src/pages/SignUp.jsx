@@ -81,7 +81,6 @@ function SignUp() {
       />
       </div>
 
-
     <div className='passwordField'>
       <label>Password</label>
       <input 

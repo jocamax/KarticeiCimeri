@@ -1,13 +1,14 @@
 import {Link} from 'react-router-dom'
 import {FaPhone} from 'react-icons/fa'
-import {FaMapMarkerAlt} from 'react-icons/fa'
+import {FaMapMarkerAlt, FaTrashAlt} from 'react-icons/fa'
 import {FaBath} from 'react-icons/fa'
 import {FaBed} from 'react-icons/fa'
 
 
-function OglasC({oglas, id}) {
+function OglasC({oglas, id, onDelete}) {
   return (
-    <li className='oglasContainerLi'>
+    <li className='oglasContainer'>
+      <div className='oglasContainerLi'>
         <Link to={`/oglasic/${id}`}>
           <div className='oglasContainer'>
             <div className='oglasImgContainer'>
@@ -32,6 +33,17 @@ function OglasC({oglas, id}) {
           </div>
             
         </Link>
+        </div>
+  
+        {onDelete && (
+          <FaTrashAlt
+          className='removeIconC'
+          fill='red'
+          cursor='pointer'
+          onClick={() => onDelete(oglas.id, oglas.name)}
+        />
+        )}
+
     </li>
   )
 }

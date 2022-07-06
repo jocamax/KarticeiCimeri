@@ -29,7 +29,7 @@ function CreateOglas() {
         name: '',
 
     })
-
+    // other items will be added eventually
     const {bathrooms, 
         bedrooms, 
         brojCimera, 
@@ -114,7 +114,7 @@ function CreateOglas() {
         )
       })
     }
-
+    // this was copied from somewhere, I will add source if I find it
     const imgUrls = await Promise.all(
       [...images].map((image) => storeImage(image))
     ).catch(() => {
@@ -144,6 +144,7 @@ function CreateOglas() {
         if(e.target.value === 'true'){
             boolean = true
         }
+        
         if(e.target.value === 'false'){
             boolean = false
         }

@@ -17,6 +17,7 @@ function ForgotPassword() {
 
     try {
       const auth = getAuth()
+      // firebase function for reseting password
       await sendPasswordResetEmail(auth, email)
       toast.success('Email sent')
       setEmail('')

@@ -23,7 +23,7 @@ function CreateKartica() {
         telefon: '',
         
     })
-
+    // destructuring formData
     const {
         brojobroka,
         price,
@@ -64,13 +64,13 @@ function CreateKartica() {
       ...formData,
       timestamp: serverTimestamp()
     }
-
+    // add to firebase storage in 'oglasi-kartice' collection
     const docRef = await addDoc(collection(db, 'oglasi-kartice'),
     formDataCopy)
 
     setLoading(false)
     toast.success('Oglas je postavljen')
-    navigate(`/category/oglasi-kartice/${docRef.id}`)
+    navigate(`/oglasi-kartice`)
     }
 
 
@@ -147,7 +147,6 @@ function CreateKartica() {
           <div>
           <button className='btn' type='submit'>Postavi Oglas</button>
           </div>
-       
            </form>
         </main>
     </div>

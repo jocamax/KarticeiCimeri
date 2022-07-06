@@ -7,9 +7,6 @@ function Spinner() {
         <div className='spinner-div'>
             <img className='spinner' src={loadingGif} alt="" />
         </div>
-     
-        
-
   )
 }
 
